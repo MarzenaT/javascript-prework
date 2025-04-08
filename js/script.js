@@ -29,3 +29,15 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if( computerMove == 'kamień' && playerMove == 'papier' ||
+    computerMove == 'nożyce' && playerMove == 'kamień' ||
+    computerMove == 'papier' && playerMove == 'nożyce'
+){
+    printMessage('Ty wygrywasz!');
+} else if (computerMove === playerMove) {
+    printMessage('Remis!');
+} else {
+    printMessage('Ja wygrywam!');
+}
+
